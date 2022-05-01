@@ -9,12 +9,6 @@ const PORT = 5000;
 app.use(bodyParser.json());
 app.use("/users", usersRoutes);
 
-app.get("/", (req, res) => {
-  console.log("[Test]");
-
-  res.send("Hello from Tr");
-});
-
 app.listen(PORT, () =>
   console.log(`Server running in port: http://localhost:${PORT}`)
 );
